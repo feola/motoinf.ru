@@ -18,7 +18,9 @@
 ;; main
 
 (restas:define-route main ("/")
-  (old-page "content/main.htm"))
+  "главная страница"
+  ;; (old-page "content/main.htm")
+  )
 
 
 ;; plan file pages
