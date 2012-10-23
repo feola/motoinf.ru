@@ -20,15 +20,15 @@
                  (:file "init")))
 (in-package #:motoinf)
 
-(defparameter *comments* (list ()))
+(defparameter *comments* (list
+                          (list :name "aaa" :msg "bbb")
+                          (list :name "ccccc" :msg "ddd")
+                          ))
 
 (defun comments ()
   (tpl:root
    (list :content
          (concatenate 'string
-                      (tpl:commentblock (list :messages
-                                              (mapcar #'(lambda (x)
-                                                          (list :msg x))
-                                                      *comments*)))
+                      (tpl:commentblock (list :messages *comments*))
                       (tpl:commentform)))))
 

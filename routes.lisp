@@ -557,10 +557,9 @@
 
 (restas:define-route addcomment ("addcomment" :method :post)
   (setf *comments*
-        (append *comments*
-                (list
-                 (hunchentoot:post-parameter "name")
-                 (hunchentoot:post-parameter "msg"))))
+        (append *comments* (list
+                            (list :name (hunchentoot:post-parameter "name")
+                                  :msg  (hunchentoot:post-parameter "msg")))))
   (hunchentoot:redirect "/comments"))
 
 ;; submodules

@@ -90,18 +90,15 @@
 
 {template comment}
   <div style="border: 1px solid green; margin: 3px;">
-    {$name |noAutoescape}
-    {$msg |noAutoescape}
+    <div style="width: 100px; color: red; display: inline;">{$name |noAutoescape}</div>
+    <div style="width: 100px; color: yellow; display: inline;">{$msg |noAutoescape}</div>
   </div>
 {/template}
 
 {template commentblock}
   <div style="border: 1px solid red; margin: 3px;">
-{foreach $name in $yourname}
-      {call comment data="$name" /}
-    {/foreach}
-    {foreach $msg in $messages}
-      {call comment data="$msg" /}
+    {foreach $data in $messages}
+      {call comment data="$data" /}
     {/foreach}
   </div>
 {/template}
