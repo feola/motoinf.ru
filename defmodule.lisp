@@ -5,6 +5,8 @@
 (require 'restas-directory-publisher)
 (require 'anaphora)
 (require 'cl-base64)
+(require 'drakma)
+(require 'split-sequence)
 
 
 (restas:define-module #:motoinf

@@ -600,6 +600,12 @@
   (op "content/songs/erotika.htm"))
 
 
+;; trans
+(def/route trans ("trans")
+  "wefewf")
+
+
+
 ;; submodules
 
 (restas:mount-submodule -css- (#:restas.directory-publisher)
@@ -617,5 +623,3 @@
 (restas:mount-submodule -resources- (#:restas.directory-publisher)
                         (restas.directory-publisher:*baseurl* '("resources"))
                         (restas.directory-publisher:*directory* (path "resources/")))
-
-
