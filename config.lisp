@@ -1,3 +1,3 @@
 (in-package #:motoinf)
 
-(defparameter *comment-path* "/home/feolan/motoinf.ru/content/commentsfiles/")
+(defparameter *comment-path* (format nil "~A" (path "content/commentsfiles/")))
