@@ -4,77 +4,94 @@
 
 {template root}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">{\n}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">{\n}{\n}
 
-  <head>
-    <title>Всё о мотоциклах</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta http-equiv="imagetoolbar" content="no" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.magnifier.js"></script>
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="js/jquery.imageLens.js" type="text/javascript"></script>
-  </head>
+  <head>{\n}
+    <title>Всё о мотоциклах</title>{\n}
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />{\n}
+    <meta http-equiv="imagetoolbar" content="no" />{\n}
+    <link href="css/style.css" rel="stylesheet" type="text/css" />{\n}
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />{\n}
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />{\n}
+    <!-- script type="text/javascript" src="js/jquery-1.8.1.min.js"></script -->{\n}
+    <!-- script type="text/javascript" src="js/jquery.magnifier.js"></script -->{\n}
+    <!-- script type="text/javascript" src="js/jquery.js"></script -->{\n}
+    <!-- script src="js/jquery.imageLens.js" type="text/javascript"></script -->{\n}
+    <!-- script src="js/enter.js" type="text/javascript"></script -->{\n}
 
-  <body>
 
-    <div class="width=100% height=100% align-left"></div>
-    <div class="width=100% height=100%align-left"></div>
-    <div class="align-left"></div>
-    <div class="padding valign-image-left"></div>
-    <div class="padding valign-image-right"></div>
-    <div class="padding valign-image-center"></div>
+    <link rel="stylesheet" type="text/css" href="/js/usr/fancybox/jquery.fancybox-1.3.4.css"/>{\n}
+    <script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>{\n}
+    <script type="text/javascript" src="/js/usr/fancybox/jquery.fancybox-1.3.4.pack.js"></script>{\n}
+    <script type="text/javascript" src="/js/common.js"></script>{\n}
+    <script type="text/javascript" src="/js/usr/enter.js"></script>{\n}
+    <script type="text/javascript" src="/js/ajaxupload.js"></script>{\n}
+    <script type="text/javascript" src="/js/entity-process.js"></script>{\n}
+    <script type="text/javascript" src="/js/comments.js"></script>{\n}
 
-    <div id="container">
 
-      <div class="colLeft">
-        <ul class="links">
-          <li><a href="history">История мотоцикла</a></li>
-          <li><a href="construct">Устройство мотоцикла</a></li>
-          <li><a href="types">Виды мотоциклов</a></li>
-          <li><a href="makers">Производители мотоциклов</a></li>
-          <li><a href="select">Как выбрать мотоцикл?</a></li>
-          <li><a href="equip">Мотоэкипировка</a></li>
-          <li><a href="license">Как получить права?</a></li>
-          <li><a href="driving">Вождение мотоцикла</a></li>
-          <li><a href="repair">Ремонт мотоцикла</a></li>
-          <li><a href="sport">Мотоcпорт</a></li>
-          <li><a href="travels">Мототуризм</a></li>
-          <li><a href="fbs">Фильмы, книги и песни</a></li>
-        </ul>
-      </div>
+  </head>{\n}{\n}
 
-      <div class="colRightContainer">
-        <div class="colRight">
+  <body>{\n}
 
-          <div id="header">
-            <br/>
-            <img src="img/banner.jpg"></img>
+    <div class="width=100% height=100% align-left"></div>{\n}
+    <div class="width=100% height=100%align-left"></div>{\n}
+    <div class="align-left"></div>{\n}
+    <div class="padding valign-image-left"></div>{\n}
+    <div class="padding valign-image-right"></div>{\n}
+    <div class="padding valign-image-center"></div>{\n}
 
-            <ul>
-              <li><a href="index" class="on">Главная</a></li>
-              <li><a href="news">Новости</a></li>
-              <li><a href="gallery">Фотогалерея</a></li>
-              <li><a href="formsearch">Поиск</a></li>
-              <li><a href="contacts">Контакты</a></li>
-              <li><a href="forum">Форум</a></li>
-            </ul>
+    <div id="container">{\n}
 
-          </div>
+      <div class="colLeft">{\n}
+        <div style="border: 1px solid red">{\n}
+          {$enterform | noAutoescape}
+          {$auth | noAutoescape}
+        </div>{\n}
+        <ul class="links">{\n}
+          <li><a href="history">История мотоцикла</a></li>{\n}
+          <li><a href="construct">Устройство мотоцикла</a></li>{\n}
+          <li><a href="types">Виды мотоциклов</a></li>{\n}
+          <li><a href="makers">Производители мотоциклов</a></li>{\n}
+          <li><a href="select">Как выбрать мотоцикл?</a></li>{\n}
+          <li><a href="equip">Мотоэкипировка</a></li>{\n}
+          <li><a href="license">Как получить права?</a></li>{\n}
+          <li><a href="driving">Вождение мотоцикла</a></li>{\n}
+          <li><a href="repair">Ремонт мотоцикла</a></li>{\n}
+          <li><a href="sport">Мотоcпорт</a></li>{\n}
+          <li><a href="travels">Мототуризм</a></li>{\n}
+          <li><a href="fbs">Фильмы, книги и песни</a></li>{\n}
+        </ul>{\n}
+      </div>{\n}
 
-          <div id="content">
-            {$content | noAutoescape}
-          </div>
+      <div class="colRightContainer">{\n}
+        <div class="colRight">{\n}
 
-          <div id="footer">
-            <div>
+          <div id="header">{\n}
+            <br/>{\n}
+            <img src="img/banner.jpg"></img>{\n}
 
-              <p><a href="index">motoinf.ru </a>&copy; 2013 </p>
+            <ul>{\n}
+              <li><a href="index" class="on">Главная</a></li>{\n}
+              <li><a href="news">Новости</a></li>{\n}
+              <li><a href="gallery">Фотогалерея</a></li>{\n}
+              <li><a href="formsearch">Поиск</a></li>{\n}
+              <li><a href="contacts">Контакты</a></li>{\n}
+              <li><a href="forum">Форум</a></li>{\n}
+            </ul>{\n}
+
+          </div>{\n}
+
+          <div id="content">{\n}
+            {$content | noAutoescape}{\n}
+          </div>{\n}
+
+          <div id="footer">{\n}
+            <div>{\n}
+
+              <p><a href="index">motoinf.ru </a>&copy; 2013 </p>{\n}
 
 <!--LiveInternet counter-->
 <script type="text/javascript">
@@ -89,26 +106,106 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 "border='0' width='88' height='15'><\/a>")</script>
 <!--/LiveInternet-->
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            </div>{\n}
+          </div>{\n}
+        </div>{\n}
+      </div>{\n}
+    </div>{\n}
 
-  </body>
-  </html>
+  </body>{\n}
+  </html>{\n}
 {/template}
 
+
+{template authnotlogged}
+<a href="#" id="btn-login">вход</a><span class="auth-links-sep">|</span><a href="#" id="btn-register">регистрация</a>{\n}
+{/template}
+
+{template authlogged}
+<a href="#" id="account-page">{$username}</a> ({$password}){\n}
+<a href="#edit-look-form-cont" class="call-upload-form">загрузить фотографию</a>{\n}{\n}
+<span class="auth-links-sep">|</span><a href="#" id="btn-logoff">выйти</a>{\n}
+{/template}
+
+{template enterform}
+<div style="display:none"> {\n}
+  <div id="form-login"> {\n}
+	<form action="" method="post"> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="fld-form-login--login" name="fld-form-login--login" type="text" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="fld-form-login--password" name="fld-form-login--password" type="password" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="btn-form-login-submit" name="btn-form-login-submit" type="button" value="log in" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    /*<input id="btn-send-login" name="btn-send-login" type="button" value="забыл пароль" /> {\n}*/
+	  </div> {\n}
+	</form> {\n}
+  </div> {\n}
+</div> {\n}
+<div style="display:none"> {\n}
+  <div id="form-register"> {\n}
+	<form action="" method="post"> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="fld-form-register--login" name="fld-form-register--login" type="text" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="btn-form-register-submit" name="btn-form-register-submit" type="button" value="register" /> {\n}
+	  </div> {\n}
+	</form> {\n}
+  </div> {\n}
+</div> {\n}
+{/template}
+
+
+
+{template enterform}
+<div style="display:none"> {\n}
+  <div id="form-login"> {\n}
+	<form action="" method="post"> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="fld-form-login--login" name="fld-form-login--login" type="text" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="fld-form-login--password" name="fld-form-login--password" type="password" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="btn-form-login-submit" name="btn-form-login-submit" type="button" value="log in" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    /*<input id="btn-send-login" name="btn-send-login" type="button" value="забыл пароль" /> {\n}*/
+	  </div> {\n}
+	</form> {\n}
+  </div> {\n}
+</div> {\n}
+<div style="display:none"> {\n}
+  <div id="form-register"> {\n}
+	<form action="" method="post"> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="fld-form-register--login" name="fld-form-register--login" type="text" /> {\n}
+	  </div> {\n}
+	  <div class="form-line"> {\n}
+	    <input id="btn-form-register-submit" name="btn-form-register-submit" type="button" value="register" /> {\n}
+	  </div> {\n}
+	</form> {\n}
+  </div> {\n}
+</div> {\n}
+{/template}
+
+
 {template comment}
-  <hr width="720px"></hr><br />
-  <div>
-    <div style="color: red;">
-      <p> {$name |noAutoescape}</p>
-    </div>
-    <div>
-      <p>{$msg |noAutoescape}</p>
-    </div>
-  </div>
+  <hr width="720px"></hr><br />{\n}
+  <div>{\n}
+    <div style="color: red;">{\n}
+      <p> {$name |noAutoescape}</p>{\n}
+    </div>{\n}
+    <div>{\n}
+      <p>{$msg |noAutoescape}</p>{\n}
+    </div>{\n}
+  </div>{\n}
 {/template}
 
 {template commentblock}
@@ -120,17 +217,54 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 {/template}
 
 {template commentform}
-<hr width="720px"></hr><br />
-<h6>Добавить комментарий</h6>
-  <form method="POST" action="addcomment">
-    <br />
-    <p>Ваше имя:</p>
-    <textarea name="name" style="width: 400px; height: 20px;"></textarea>
-    <br /><br />
-    <p>Ваше сообщение:</p>
-    <textarea name="msg" style="width: 400px; height: 100px;"></textarea>
-    <br /><br />
-    <input type="submit" value="Комментировать" />
-  </form>
+<hr width="720px"></hr><br />{\n}
+<h6>Добавить комментарий</h6>{\n}
+  <form method="POST" action="addcomment">{\n}
+    <br />{\n}
+    <p>Ваше имя:</p>{\n}
+    <textarea name="name" style="width: 400px; height: 20px;"></textarea>{\n}
+    <br /><br />{\n}
+    <p>Ваше сообщение:</p>{\n}
+    <textarea name="msg" style="width: 400px; height: 100px;"></textarea>{\n}
+    <br /><br />{\n}
+    <input type="submit" value="Комментировать" />{\n}
+  </form>{\n}
 {/template}
 
+
+{template single}
+<input
+   {foreach $attr in $attrs}{if index($attr) % 2 ==
+        0}{$attr}{else}="{$attr}" {/if}{/foreach} />
+{/template}
+
+{template double}
+<{$tag} {foreach $attr in $attrs}{if index($attr) % 2 ==
+        0}{$attr}{else}="{$attr}" {/if}{/foreach}>
+{$text}
+</{$tag}>
+{/template}
+
+{template fldlist}
+<input name="clo-count" id="clo-count" value="{$clocount}" type="hidden" />
+<ul id="clo-items-list">
+  {foreach $item in $list}
+  {call fldlistitem data="$item" /}
+  {/foreach}
+</ul>
+{/template}
+
+{template fldlistitem}
+<li id="{$id}">
+  <span class="category"><input type="text" name="category" value="{$category}" /></span>
+  <ul>
+    <li class="brand">
+      <span class="clo-list-capt">бренд:</span>&nbsp;<input type="text" name="brand-{$num}" value="{$brand}" /></li>
+    <li class="shop">
+      <span class="clo-list-capt">магазин:</span>&nbsp;<input type="text" name="shop-{$num}" value="{$shop}" /></li>
+  </ul>
+  <div class="eddel-block">
+    <a href="#" onclick="delCloItem({$id})" class="del">удалить</a>
+  </div>
+</li>
+{/template}

@@ -37,4 +37,6 @@
 (defun path (relative)
   (merge-pathnames relative *basedir*))
 
+(defparameter *comment-path* (format nil "~A" (path "content/commentsfiles/")))
+
 (closure-template:compile-template :common-lisp-backend (path "templates.htm"))
