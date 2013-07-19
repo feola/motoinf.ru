@@ -46,7 +46,7 @@
     <div id="container">{\n}
 
       <div class="colLeft">{\n}
-        <div style="border: 1px solid red">{\n}
+        <div style="border: 1px solid #ff9; font-size: 15px; padding: 5px; text-align: center">{\n}
           {$enterform | noAutoescape}
           {$auth | noAutoescape}
         </div>{\n}
@@ -118,7 +118,7 @@ screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
 
 
 {template authnotlogged}
-<a href="#" id="btn-login">вход</a><span class="auth-links-sep">|</span><a href="#" id="btn-register">регистрация</a>{\n}
+<a href="#" id="btn-login">Вход</a><span class="auth-links-sep"> | </span><a href="#" id="btn-register">Регистрация</a>{\n}
 {/template}
 
 {template authlogged}
